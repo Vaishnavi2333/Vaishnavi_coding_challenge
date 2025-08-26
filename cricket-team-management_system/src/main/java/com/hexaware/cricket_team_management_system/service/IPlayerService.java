@@ -19,6 +19,6 @@ public interface IPlayerService {
 	
 	public List<Player> getAllPlayers();
 	
-	public List<Player> getByRole();
+	public List<Player> getByRole(String role);
 
 }

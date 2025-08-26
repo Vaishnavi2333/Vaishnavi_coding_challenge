@@ -74,9 +74,14 @@ public class PlayerServiceImpl implements IPlayerService{
 	}
 
 	@Override
-	public List<Player> getByRole() {
+	public List<Player> getByRole(String role) {
 		
-		return repo.getByRole();
+		return repo.getByRole(role);
 	}
+
+	
+				
+
+	
 
 }

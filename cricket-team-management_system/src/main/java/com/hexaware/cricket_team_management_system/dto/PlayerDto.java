@@ -24,11 +24,11 @@ public class PlayerDto {
 	
 	
 	@NotNull(message="Jersey number cannot be null")
-	//@Min(value = 1, message = "Jersey number must be at least 1")
+	@Min(value = 1, message = "Jersey number must be at least 1")
 	private int jerseyNumber;
 	
 	@NotNull
-	@Pattern(regexp = "Batsman|Bowler|Wicket Keeper|All Rounder")
+	@Pattern(regexp = "Batsman|Bowler|Keeper|All Rounder")
 	private String role;
 	
 	@Positive(message="Number of matches should be positive")
